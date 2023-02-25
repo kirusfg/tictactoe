@@ -1,0 +1,4 @@
+.vscode
+.helix/
+.clangd
+build/
