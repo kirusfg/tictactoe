@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build (Release)",
+            "command": "/usr/bin/make",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Build (Debug)",
+            "command": "/usr/bin/make",
+            "args": [
+                "debug"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Run",
+            "command": "${cwd}/build/tictactoe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}

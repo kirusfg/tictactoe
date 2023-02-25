@@ -237,7 +237,7 @@ void Game::drawState() {
 void Game::drawWinner(Value winner) {
   sf::Text text;
   sf::Font font;
-  font.loadFromFile("fonts/Roboto-Black.ttf");
+  font.loadFromFile("fonts/Roboto-Medium.ttf");
 
   text.setFont(font);
 
